@@ -6,10 +6,10 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ozjd/slm-coffee.git"
+    "url": "https://github.com/zdenko/slm-coffee.git"
   },
   "bugs": {
-    "url": "https://github.com/ozjd/slm-coffee/issues"
+    "url": "https://github.com/zdenko/slm-coffee/issues"
   },
   "keywords": [
     "slm",
@@ -18,9 +18,14 @@
     "coffee-script",
     "coffeescript"
   ],
+  "devDependencies": {
+    "coffeescript": "^2"
+  },
   "dependencies": {
-    "coffee-script": "^1.10.0",
-    "slm": "^0.5.0"
+    "slm": "^1"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/coffee -c index.coffee"
   },
   "license": "MIT"
 }
